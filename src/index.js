@@ -1,17 +1,11 @@
+// Підключаємо React та React DOM для роботи з віртуальним DOM Реакт
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// Імпорт Арр
+import App from './components/app';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
+// ReactDOM Перетворює React елементи в прості браузерні DOM елементи і рендерить їх на сторінці
+ReactDOM.render(<App />, document.getElementById('root'));
